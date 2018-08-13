@@ -1,0 +1,19 @@
+
+
+mkdir build
+
+cd build
+
+cmake .. -DBUILD_SHARED_LIBS=ON
+
+"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\MSBuild\15.0\Bin\MSBuild.exe" GLFW.sln /m /p:Configuration=Release
+
+
+Output build\src\Release
+
+mkdir build
+cd build
+cmake .. -DBUILD_SHARED_LIBS=ON
+make (mac, linux) or nmake (windows)
+Output build\src
+
